@@ -1,0 +1,8 @@
+1. start server
+uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+
+2. start client
+streamlit run chatbot.py --server.port 6006
+
+3. port binding:
+ssh -CNg -L 6006:127.0.0.1:6006 root@connect.bjb1.seetacloud.com -p 13725
